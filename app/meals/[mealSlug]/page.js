@@ -1,4 +1,4 @@
-export default function MealSlugPages({ params }) {
+export default function MealDetailsPage({ params }) {
   return (
     <main>
       <h1 style={{ color: "white", textAlign: "center" }}>
