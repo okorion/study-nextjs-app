@@ -1,10 +1,10 @@
-import MainHeader from "@/components/main-header/main-header.js";
+import MainHeader from '@/components/main-header/main-header.js';
 
-import "./globals.css";
+import './globals.css';
 
 export const metadata = {
-  title: "NextLevel Food",
-  description: "Delicious meals, shared by a food-loving community.",
+  title: 'NextLevel Food',
+  description: 'Delicious meals, shared by a food-loving community.',
 };
 
 export default function RootLayout({ children }) {
