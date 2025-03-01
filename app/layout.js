@@ -1,4 +1,6 @@
+import MainFooter from '@/components/main-footer/main-footer.js';
 import MainHeader from '@/components/main-header/main-header.js';
+import { LanguageProvider } from '@/lib/context/LanguageContext';
 
 import './globals.css';
 
@@ -11,8 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <MainHeader />
-        {children}
+        <LanguageProvider>
+          <MainHeader />
+          {children}
+          <MainFooter />
+        </LanguageProvider>
       </body>
     </html>
   );
