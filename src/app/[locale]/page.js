@@ -1,11 +1,13 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import ImageSlideshow from '@/components/images/image-slideshow';
+import { Link } from '@/i18n/navigation';
 
 import classes from './page.module.css';
 
-// To do List: 다국어 기능 추가하기
 export default function Home() {
+  const t = useTranslations('Home');
+
   return (
     <>
       <header className={classes.header}>
@@ -14,36 +16,27 @@ export default function Home() {
         </div>
         <div>
           <div className={classes.hero}>
-            <h1>NextLevel Food for NextLevel Foodies</h1>
-            <p>Taste & share food from all over the world.</p>
+            <h1>{t('heroTitle')}</h1>
+            <p>{t('heroTagline')}</p>
           </div>
           <div className={classes.cta}>
-            <Link href="/community">Join the Community</Link>
-            <Link href="/meals">Explore Meals</Link>
+            <Link href="/community">{t('joinCommunity')}</Link>
+            <Link href="/meals">{t('exploreMeals')}</Link>
           </div>
         </div>
       </header>
+
       <main>
         <section className={classes.section}>
-          <h2>How it works</h2>
-          <p>
-            NextLevel Food is a platform for foodies to share their favorite recipes with the world.
-            It&apos;s a place to discover new dishes, and to connect with other food lovers.
-          </p>
-          <p>
-            NextLevel Food is a place to discover new dishes, and to connect with other food lovers.
-          </p>
+          <h2>{t('howItWorks')}</h2>
+          <p>{t('howItWorksDesc1')}</p>
+          <p>{t('howItWorksDesc2')}</p>
         </section>
 
         <section className={classes.section}>
-          <h2>Why NextLevel Food?</h2>
-          <p>
-            NextLevel Food is a platform for foodies to share their favorite recipes with the world.
-            It&apos;s a place to discover new dishes, and to connect with other food lovers.
-          </p>
-          <p>
-            NextLevel Food is a place to discover new dishes, and to connect with other food lovers.
-          </p>
+          <h2>{t('whyNextLevel')}</h2>
+          <p>{t('whyDesc1')}</p>
+          <p>{t('whyDesc2')}</p>
         </section>
       </main>
     </>
