@@ -9,7 +9,7 @@ export default function MainFooter() {
 
       <select
         className={classes.dropdown}
-        value={language}
+        value={'en'}
         // onChange={(e) => setLanguage(e.target.value)}
       >
         <option value="ko">🇰🇷 한국어</option>
