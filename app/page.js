@@ -1,7 +1,8 @@
 import Link from "next/link";
 
-import classes from "./page.module.css";
 import ImageSlideshow from "@/components/images/image-slideshow";
+
+import classes from "./page.module.css";
 
 // To do List: 다국어 기능 추가하기
 export default function Home() {
