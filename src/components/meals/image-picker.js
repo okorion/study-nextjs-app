@@ -2,11 +2,13 @@
 
 import { useRef, useState } from 'react';
 
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 import classes from './image-picker.module.css';
 
 export default function ImagePicker({ label, name }) {
+  const t = useTranslations('ImagePicker'); // ✅ 다국어 번역 적용
   const [pickedImage, setPickedImage] = useState(null);
   const imageInput = useRef();
 
@@ -33,8 +35,8 @@ export default function ImagePicker({ label, name }) {
       <label htmlFor={name}>{label}</label>
       <div className={classes.controls}>
         <div className={classes.preview}>
-          {!pickedImage && <p>No image picked yet.</p>}
-          {pickedImage && <Image src={pickedImage} alt="The image selected by the user." fill />}
+          {!pickedImage && <p>{t('noImage')}</p>}
+          {pickedImage && <Image src={pickedImage} alt={t('altText')} fill />}
         </div>
         <input
           ref={imageInput}
@@ -47,7 +49,7 @@ export default function ImagePicker({ label, name }) {
           required
         />
         <button className={classes.button} type="button" onClick={handlePickClick}>
-          Pick an Image
+          {t('pickImage')}
         </button>
       </div>
     </div>

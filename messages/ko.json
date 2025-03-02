@@ -37,5 +37,29 @@
     "description": "가장 좋아하는 레시피를 선택하고 직접 요리하세요. 쉽고 재미있어요!",
     "shareRecipe": "당신의 레시피 공유하기",
     "loading": "요리를 불러오는 중..."
+  },
+
+  "ShareMeal": {
+    "title": "당신의",
+    "highlight": "좋아하는 요리 공유하기",
+    "description": "또는 공유할 가치가 있는 다른 요리를 올려보세요!",
+    "nameLabel": "이름",
+    "emailLabel": "이메일",
+    "mealTitleLabel": "제목",
+    "summaryLabel": "요약",
+    "instructionsLabel": "조리법",
+    "imageLabel": "이미지 업로드"
+  },
+
+  "ImagePicker": {
+    "noImage": "아직 선택된 이미지가 없습니다.",
+    "pickImage": "이미지 선택",
+    "altText": "사용자가 선택한 이미지."
+  },
+
+  "MealsForm": {
+    "submitting": "제출 중...",
+    "shareMeal": "요리 공유하기",
+    "dbWriteDisabled": "배포 환경에서는 데이터베이스에 기록할 수 없습니다."
   }
 }

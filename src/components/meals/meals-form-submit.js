@@ -1,8 +1,11 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { useFormStatus } from 'react-dom';
 
 export default function MealsFormSubmit() {
+  const t = useTranslations('MealsForm'); // ✅ 다국어 번역 적용
   const { pending } = useFormStatus();
 
   // 클라이언트에서 환경 변수 읽기
@@ -11,9 +14,9 @@ export default function MealsFormSubmit() {
   return (
     <>
       {isDbWriteEnabled ? (
-        <button disabled={pending}>{pending ? 'Submitting...' : 'Share Meal'}</button>
+        <button disabled={pending}>{pending ? t('submitting') : t('shareMeal')}</button>
       ) : (
-        <button disabled>⚠️ Database writes are disabled in this environment.</button>
+        <button disabled>⚠️ {t('dbWriteDisabled')}</button>
       )}
     </>
   );

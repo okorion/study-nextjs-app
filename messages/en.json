@@ -37,5 +37,29 @@
     "description": "Choose your favorite recipe and cook it yourself. It is easy and fun!",
     "shareRecipe": "Share Your Favorite Recipe",
     "loading": "Fetching meals..."
+  },
+
+  "ShareMeal": {
+    "title": "Share your",
+    "highlight": "favorite meal",
+    "description": "Or any other meal you feel needs sharing!",
+    "nameLabel": "Your name",
+    "emailLabel": "Your email",
+    "mealTitleLabel": "Title",
+    "summaryLabel": "Short Summary",
+    "instructionsLabel": "Instructions",
+    "imageLabel": "Your image"
+  },
+
+  "ImagePicker": {
+    "noImage": "No image picked yet.",
+    "pickImage": "Pick an Image",
+    "altText": "The image selected by the user."
+  },
+
+  "MealsForm": {
+    "submitting": "Submitting...",
+    "shareMeal": "Share Meal",
+    "dbWriteDisabled": "Database writes are disabled in this environment."
   }
 }
