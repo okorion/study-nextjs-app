@@ -1,8 +1,9 @@
 import { Suspense } from 'react';
 
-import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
 
 import MealsGrid from '@/components/meals/meals-grid';
+import { Link } from '@/i18n/navigation';
 import { getMeals } from '@/lib/meals';
 
 import classes from './page.module.css';
@@ -19,19 +20,21 @@ async function Meals() {
 }
 
 export default async function MealsPage() {
+  const t = await getTranslations('Meals');
+
   return (
     <>
       <header className={classes.header}>
         <h1>
-          Delicious meals, created <span className={classes.highlight}>by you</span>
+          {t('title')} <span className={classes.highlight}>{t('highlight')}</span>
         </h1>
-        <p>Choose your favorite recipe and cook it yourself. It is easy and fun!</p>
+        <p>{t('description')}</p>
         <p className={classes.cta}>
-          <Link href="/meals/share">share Your Favorite Recipe</Link>
+          <Link href="/meals/share">{t('shareRecipe')}</Link>
         </p>
       </header>
       <main className={classes.main}>
-        <Suspense fallback={<p className={classes.loading}>Fetching meals...</p>}>
+        <Suspense fallback={<p className={classes.loading}>{t('loading')}</p>}>
           <Meals />
         </Suspense>
       </main>

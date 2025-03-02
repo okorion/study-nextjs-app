@@ -29,5 +29,13 @@
       "friends": "Find new friends & like-minded people",
       "events": "Participate in exclusive events"
     }
+  },
+
+  "Meals": {
+    "title": "Delicious meals, created",
+    "highlight": "by you",
+    "description": "Choose your favorite recipe and cook it yourself. It is easy and fun!",
+    "shareRecipe": "Share Your Favorite Recipe",
+    "loading": "Fetching meals..."
   }
 }
