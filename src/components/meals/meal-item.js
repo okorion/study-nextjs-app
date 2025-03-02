@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 import { Link } from '@/i18n/navigation';
@@ -5,6 +6,8 @@ import { Link } from '@/i18n/navigation';
 import classes from './meal-item.module.css';
 
 export default function MealItem({ title, slug, image, summary, creator }) {
+  const t = useTranslations('MealsItem');
+
   return (
     <article className={classes.meal}>
       <header>
@@ -19,7 +22,7 @@ export default function MealItem({ title, slug, image, summary, creator }) {
       <div className={classes.content}>
         <p className={classes.summary}>{summary}</p>
         <div className={classes.actions}>
-          <Link href={`/meals/${slug}`}>View Details</Link>
+          <Link href={`/meals/${slug}`}>{t('detailLabel')}</Link>
         </div>
       </div>
     </article>
