@@ -39,6 +39,10 @@
     "loading": "요리를 불러오는 중..."
   },
 
+  "MealsItem": {
+    "detailLabel": "자세히 보기"
+  },
+
   "ShareMeal": {
     "title": "당신의",
     "highlight": "좋아하는 요리 공유하기",

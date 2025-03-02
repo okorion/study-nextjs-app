@@ -39,6 +39,10 @@
     "loading": "Fetching meals..."
   },
 
+  "MealsItem": {
+    "detailLabel": "View Details"
+  },
+
   "ShareMeal": {
     "title": "Share your",
     "highlight": "favorite meal",

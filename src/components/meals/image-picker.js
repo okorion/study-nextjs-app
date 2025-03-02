@@ -8,7 +8,7 @@ import Image from 'next/image';
 import classes from './image-picker.module.css';
 
 export default function ImagePicker({ label, name }) {
-  const t = useTranslations('ImagePicker'); // ✅ 다국어 번역 적용
+  const t = useTranslations('ImagePicker');
   const [pickedImage, setPickedImage] = useState(null);
   const imageInput = useRef();
 
