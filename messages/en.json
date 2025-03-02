@@ -5,6 +5,7 @@
     "browseMeals": "Browse Meals",
     "community": "Foodies Community"
   },
+
   "Home": {
     "heroTitle": "NextLevel Food for NextLevel Foodies",
     "heroTagline": "Taste & share food from all over the world.",
@@ -16,5 +17,17 @@
     "whyNextLevel": "Why NextLevel Food?",
     "whyDesc1": "NextLevel Food is a platform for foodies to share their favorite recipes with the world. It's a place to discover new dishes, and to connect with other food lovers.",
     "whyDesc2": "NextLevel Food is a place to discover new dishes, and to connect with other food lovers."
+  },
+
+  "Community": {
+    "title": "One shared passion: ",
+    "titleHighlight": "Food",
+    "description": "Join our community and share your favorite recipes!",
+    "perksTitle": "Community Perks",
+    "perks": {
+      "share": "Share & discover recipes",
+      "friends": "Find new friends & like-minded people",
+      "events": "Participate in exclusive events"
+    }
   }
 }
