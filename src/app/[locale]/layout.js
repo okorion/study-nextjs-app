@@ -2,6 +2,8 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 import MainFooter from '@/components/main-footer/main-footer.js';
 import MainHeader from '@/components/main-header/main-header.js';
 import { routing } from '@/i18n/routing';
@@ -28,6 +30,7 @@ export default async function RootLocaleLayout({ children, params }) {
         <NextIntlClientProvider messages={messages}>
           <MainHeader />
           {children}
+          <SpeedInsights />
           <MainFooter />
         </NextIntlClientProvider>
       </body>
